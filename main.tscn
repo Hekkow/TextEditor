@@ -16,10 +16,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_edbbb")
 
-[node name="Label" type="Label" parent="."]
+[node name="Text" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 2.0
+offset_right = 42.0
+offset_bottom = 86.0
 text = "t"
 label_settings = SubResource("LabelSettings_cnwes")
 
@@ -27,3 +28,12 @@ label_settings = SubResource("LabelSettings_cnwes")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="BufferText" type="Label" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 109.0
+offset_right = 43.0
+offset_bottom = 195.0
+text = "t"
+label_settings = SubResource("LabelSettings_cnwes")
