@@ -1,14 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://dsh3ki4xd6lci"]
+[gd_scene load_steps=5 format=3 uid="uid://dsh3ki4xd6lci"]
 
 [ext_resource type="Script" path="res://editor.gd" id="1_edbbb"]
 [ext_resource type="FontFile" uid="uid://dra6kl8js0k0v" path="res://RobotoMono.ttf" id="1_j7jvu"]
-[ext_resource type="Script" path="res://Cursor.gd" id="3_4nb53"]
-[ext_resource type="Script" path="res://Scrollbar.gd" id="3_8n8xp"]
+[ext_resource type="Script" path="res://HorizontalScrollbar.gd" id="3_8n8xp"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_cnwes"]
-resource_name = "font"
 font = ExtResource("1_j7jvu")
-font_size = 128
+font_size = 64
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -24,21 +22,21 @@ layout_mode = 0
 offset_left = 2.0
 offset_right = 42.0
 offset_bottom = 86.0
+text = "t"
 label_settings = SubResource("LabelSettings_cnwes")
 
 [node name="Cursor" type="ColorRect" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("3_4nb53")
 
 [node name="BufferText" type="Label" parent="."]
-visible = false
 layout_mode = 0
 offset_left = 3.0
 offset_top = 109.0
 offset_right = 43.0
 offset_bottom = 195.0
+text = "t"
 label_settings = SubResource("LabelSettings_cnwes")
 
 [node name="HorizontalScrollbar" type="ColorRect" parent="."]
@@ -48,19 +46,3 @@ offset_top = 376.0
 offset_right = 594.0
 offset_bottom = 416.0
 script = ExtResource("3_8n8xp")
-
-[node name="VerticalScrollbar" type="ColorRect" parent="."]
-layout_mode = 0
-offset_left = 1028.0
-offset_top = 752.0
-offset_right = 1108.0
-offset_bottom = 792.0
-script = ExtResource("3_8n8xp")
-
-[node name="RowColumn" type="Label" parent="."]
-layout_mode = 0
-offset_left = 1080.0
-offset_top = 3.0
-offset_right = 1147.0
-offset_bottom = 26.0
-text = "colcount"
